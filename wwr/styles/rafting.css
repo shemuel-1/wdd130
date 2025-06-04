@@ -1,10 +1,10 @@
 :root {
     --primary-color: #7C70FF;
-    --secondary-color:#4E6A5E;
-    --accent1-color:#ECEAF2;
-    --accent2-color:#D9EC32;
+    --secondary-color: #4E6A5E;
+    --accent1-color: #ECEAF2;
+    --accent2-color: #D9EC32;
     --heading-font: montserrat, sans-serif;
-    --body-font:roboto, sans-serif;
+    --body-font: roboto, sans-serif;
 }
 
 * {
@@ -15,20 +15,55 @@
 
 body {
     font-family: var(--body-font);
-    color: rgb(0,0,0);
+    color: rgb(0, 0, 0);
+    background-color: var(--accent1-color);
 }
 
-header, main, footer {
-    width: 840px;
+header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    max-width: 100%;
+
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    padding: 10px 10px 10px 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    font-family: var(--heading-font);
+}
+
+.navigation a {
+    text-decoration: none;
+    font-size: large;
+}
+
+header,
+main,
+footer {
+    width: 900px;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+    text-align: center;
 }
 
-nav, p, section, article {
+nav,
+p,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -47,9 +82,9 @@ nav, p, section, article {
     height: auto;
 }
 
-.hero h1{
+.hero h1 {
     position: absolute;
-    top:20px;
+    top: 20px;
     width: 100%;
     padding: 10px;
     text-align: center;
@@ -59,11 +94,11 @@ nav, p, section, article {
 }
 
 .hero article {
-    position:absolute;
+    position: absolute;
     top: 80px;
     color: var(--accent1-color);
     font-family: var(--heading-font);
-    text-align:start;
+    text-align: start;
     background-color: var(--secondary-color);
     /* padding: 10px; */
     margin: 25px;
@@ -74,4 +109,89 @@ nav, p, section, article {
     width: 200px;
     height: auto;
     margin: 3px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+}
+
+.history img {
+    width: 300px;
+    height: auto;
+    /* border-radius: 15px; */
+    /* box-shadow: rgb(22, 21, 22) 2px 2px 5px; */ 
+    padding-top: 50px;
+}
+
+.history h2 {
+    text-align: center;
+    grid-column: 1 / 4;
+    padding-top: 5px;
+    padding-bottom: 20px;
+
+}
+
+.adv-section {
+    border: var(--secondary-color) 1px solid;
+    border-radius: 15px;
+    /* background-color: var(--accent2-color); */
+    padding: 30px;
+}
+
+.adv-section h2 {
+    padding: 10px;
+}
+
+#adventure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+#adventure figure {
+    text-align: center;
+    font-family: var(--heading-font);
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+
+#adventure img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    max-width: 900px;
+    background-color: var(--accent2-color);
+}
+
+footer p {
+    text-align: center;
+    font-size: smaller;
+    color: black;
+    font-family: var(--heading-font);
+
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 50px;
+    grid-column: 2/3;
+}
+
+footer nav a img {
+    width: 40px;
+    height: auto;
+    padding-right: 20px;
 }
