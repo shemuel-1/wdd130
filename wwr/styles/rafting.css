@@ -23,13 +23,14 @@ header {
     display: grid;
     grid-template-columns: 120px 1fr;
     max-width: 100%;
-
+    background-color: var(--accent2-color);
+    border-bottom: 2px solid rgba(78, 106, 94, 0.5);
 }
 
 header img {
     width: 150px;
     height: auto;
-    padding: 10px 10px 10px 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .navigation {
@@ -134,8 +135,10 @@ article {
 }
 
 .adv-section {
-    border: var(--secondary-color) 1px solid;
-    border-radius: 15px;
+    border-top: 2px solid rgba(78, 106, 94, 0.5);
+    border-bottom: 2px solid rgba(78, 106, 94, 0.5);
+    margin: 20px;
+    margin-bottom: 70px;
     /* background-color: var(--accent2-color); */
     padding: 30px;
 }
@@ -158,6 +161,7 @@ article {
     background-color: var(--secondary-color);
     border-radius: 15px;
     padding-bottom: 5px;
+    color: var(--accent1-color);
 }
 
 #adventure img {
@@ -173,6 +177,7 @@ footer {
     align-items: center;
     max-width: 900px;
     background-color: var(--accent2-color);
+    border-top: 2px solid rgba(78, 106, 94, 0.5);
 }
 
 footer p {
