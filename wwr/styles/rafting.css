@@ -1,6 +1,6 @@
 :root {
     --primary-color: #7C70FF;
-    --secondary-color: #4E6A5E;
+    --secondary-color: #3a4742;
     --accent1-color: #ECEAF2;
     --accent2-color: #D9EC32;
     --heading-font: montserrat, sans-serif;
@@ -57,7 +57,7 @@ footer {
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: navy;
     text-align: center;
 }
 
