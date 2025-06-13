@@ -10,7 +10,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 body {
@@ -59,6 +59,30 @@ h2 {
     font-family: var(--heading-font);
     color: navy;
     text-align: center;
+    padding-top: 15px;
+}
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+.contact-info h3 {
+    font-family: var(--heading-font);
+    text-align: start;
+}
+
+.map h3 {
+    font-family: var(--heading-font);
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.map iframe {
+    max-width: 400px;
+    max-height: 300px;
+    margin: 12px auto;
 }
 
 nav,
@@ -122,7 +146,7 @@ article {
     width: 300px;
     height: auto;
     /* border-radius: 15px; */
-    /* box-shadow: rgb(22, 21, 22) 2px 2px 5px; */ 
+    /* box-shadow: rgb(22, 21, 22) 2px 2px 5px; */
     padding-top: 50px;
 }
 
@@ -169,6 +193,61 @@ article {
     height: auto;
     margin: 0 auto;
     border-radius: 15px;
+}
+
+.contact-form {
+    margin: 10px 20px 50px;
+    padding: 10px;
+    border-top: 2px solid rgba(78, 106, 94, 0.5);
+    border-bottom: 2px solid rgba(78, 106, 94, 0.5);
+}
+
+label {
+    display: block;
+    font-family: var(--heading-font);
+}
+
+#purpose input {
+    width: 10px;
+}
+
+#message {
+    width: 400px;
+    height: 70px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+#message label {
+    font-weight: 500;
+    font-family: var(--body-font);
+}
+
+#checkbox {
+    margin: 10px;
+    display: inline;
+}
+
+#checkbox input {
+    width: 20px;
+}
+
+legend {
+    font-weight: 500;
+    padding: 10px;
+}
+
+input {
+    padding: 5px;
+    width: 300px;
+    margin: 10px;
+}
+
+button {
+    padding: 5px;
+    color: var(--accent1-color);
+    background-color: navy;
+    margin: 30px;
 }
 
 footer {
