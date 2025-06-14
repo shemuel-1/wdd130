@@ -254,6 +254,36 @@ button {
     margin: 30px;
 }
 
+.form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.staff-images{
+    display: flex;
+    flex-direction: column;
+}
+
+.staff-images img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: #3a4742 2px 2px 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.staff-images figure {
+    text-align: center;
+    font-family: var(--heading-font);
+    border-radius: 15px;
+    padding-bottom: 5px;
+    font-weight: 500;
+    font-style: italic;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr auto;
